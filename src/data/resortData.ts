@@ -47,11 +47,11 @@ export interface SeasonalOffer {
   validityNote: string;
 }
 
-export const HERO_IMAGE = '/src/assets/images/eira_hero_resort_1794900653766.jpg';
-export const SWING_DECK_HERO_IMAGE = '/src/assets/images/eira_swing_deck_twilight_hero_1794909208579.jpg';
-export const DINING_IMAGE = '/src/assets/images/eira_dining_restaurant_1794900660211.jpg';
-export const REFERENCE_DESIGN_WEBP = '/assets/aistudio/7479ca8557aa9f48dfa4d31400645201_61a4e3c2.webp';
-export const BRAND_LOGO_PDF = '/assets/aistudio/EIRA_logo_83e64182.pdf';
+export const HERO_IMAGE = './src/assets/images/eira_hero_resort_1794900653766.jpg';
+export const SWING_DECK_HERO_IMAGE = './src/assets/images/eira_swing_deck_twilight_hero_1794909208579.jpg';
+export const DINING_IMAGE = './src/assets/images/eira_dining_restaurant_1794900660211.jpg';
+export const REFERENCE_DESIGN_WEBP = './assets/aistudio/7479ca8557aa9f48dfa4d31400645201_61a4e3c2.webp';
+export const BRAND_LOGO_PDF = './assets/aistudio/EIRA_logo_83e64182.pdf';
 
 export const ROOMS_DATA: RoomItem[] = [
   {
@@ -67,7 +67,7 @@ export const ROOMS_DATA: RoomItem[] = [
     bedType: 'Teak Poster King Bed',
     view: 'East Estuary & Palm Grove',
     nightlyRate: 38000,
-    image: '/src/assets/images/room_harbour_room_1794900654179.jpg',
+    image: './src/assets/images/room_harbour_room_1794900654179.jpg',
     highlights: [
       'Hand-carved Malabar teak bed',
       'Private louvered sea verandah',
@@ -95,7 +95,7 @@ export const ROOMS_DATA: RoomItem[] = [
     bedType: 'Canopy King Bed',
     view: 'Direct Arabian Sea Shoreline',
     nightlyRate: 46000,
-    image: '/src/assets/images/room_tide_room_1794900655154.jpg',
+    image: './src/assets/images/room_tide_room_1794900655154.jpg',
     highlights: [
       'Direct beach footpath access',
       'Floor-to-ceiling teak sliders',
@@ -123,7 +123,7 @@ export const ROOMS_DATA: RoomItem[] = [
     bedType: 'King Bed + Jhoola Daybed',
     view: 'Casuarina Dunes & Sunset Bay',
     nightlyRate: 68000,
-    image: '/src/assets/images/room_dune_suite_1794900656688.jpg',
+    image: './src/assets/images/room_dune_suite_1794900656688.jpg',
     highlights: [
       'Private heated plunge pool',
       'Traditional teak jhoola swing',
@@ -151,7 +151,7 @@ export const ROOMS_DATA: RoomItem[] = [
     bedType: 'Maharaja Canopy King Bed',
     view: '180° Headland & Arabian Sea',
     nightlyRate: 95000,
-    image: '/src/assets/images/room_the_lookout_1794900658040.jpg',
+    image: './src/assets/images/room_the_lookout_1794900658040.jpg',
     highlights: [
       '180° Arabian Sea cliff panorama',
       'Private infinity-edge plunge pool',
@@ -252,7 +252,7 @@ export const EXPERIENCES_DATA: ExperienceItem[] = [
       'Cedar & vetiver herbal steam pavilion and rainwater plunge',
       'Fresh tulsi, ginger & lemongrass infusions served poolside',
     ],
-    image: '/src/assets/images/exp_sea_water_pool_1794900660601.jpg',
+    image: './src/assets/images/exp_sea_water_pool_1794900660601.jpg',
     featured: true,
   },
   {
@@ -268,7 +268,7 @@ export const EXPERIENCES_DATA: ExperienceItem[] = [
       'Hand-crafted wooden kayaks, tow floats, and dry bags provided',
       'Followed by warm sukku (dry ginger) palm-jaggery elixir on the deck',
     ],
-    image: '/src/assets/images/exp_guided_sea_swims_1794900662412.jpg',
+    image: './src/assets/images/exp_guided_sea_swims_1794900662412.jpg',
     featured: false,
   },
   {
@@ -284,7 +284,7 @@ export const EXPERIENCES_DATA: ExperienceItem[] = [
       'Packed brass tiffin picnic with spiced buttermilk & snacks (₹3,500 for two)',
       'Guided spice-harvesting & birdwatching walks with our estate naturalist',
     ],
-    image: '/src/assets/images/exp_coast_path_walks_1794900662389.jpg',
+    image: './src/assets/images/exp_coast_path_walks_1794900662389.jpg',
     featured: false,
   },
 ];

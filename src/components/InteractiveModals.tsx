@@ -1005,7 +1005,7 @@ export const ExperienceOrInfoModal: React.FC<ExperienceOrInfoModalProps> = ({
                 </p>
                 <div className="rounded-2xl overflow-hidden border border-[#D7E4E1]">
                   <img
-                    src="/assets/aistudio/4aaf2c0ea5f8f86038b6f67182f3f07d_9514f484.jpg"
+                    src="./assets/aistudio/4aaf2c0ea5f8f86038b6f67182f3f07d_9514f484.jpg"
                     alt="Lora and Proxima Nova typography pairing specimen"
                     referrerPolicy="no-referrer"
                     className="w-full h-auto"
