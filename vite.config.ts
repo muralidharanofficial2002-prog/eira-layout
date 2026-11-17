@@ -18,6 +18,7 @@ export default defineConfig(() => {
                 '<!-- EIRA_APP_ENTRY -->',
                 '<script type="module" data-eira-vite="true" src="/src/main.tsx"></script>'
               )
+              .replace(/<style id="eira-static-styles">[\s\S]*?<\/style>/, '')
               .replace(/<script type="module" id="eira-static-loader">[\s\S]*?<\/script>/, '');
           },
         },
