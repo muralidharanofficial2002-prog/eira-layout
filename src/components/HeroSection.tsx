@@ -204,28 +204,32 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           imgClassName="animate-hero-zoom object-center transition-all duration-700"
         />
 
-        {/* Color-Harmonizing Layer: Shifts Blue Sky/Shadows to the Uploaded #80B8B4 Sage-Aqua Green Hue */}
+        {/* Color-Harmonizing Layer: Reduced in the Center so Sunset & Sea Remain Clear, Green Gradient on Outer Frame */}
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-br from-[#80B8B4]/75 via-[#5E9A95]/65 to-[#253D3B]/90 mix-blend-color"
+          className="absolute inset-0 mix-blend-color"
+          style={{
+            background:
+              'radial-gradient(circle at 45% 50%, rgba(128, 184, 180, 0.08) 0%, rgba(128, 184, 180, 0.32) 45%, rgba(45, 79, 76, 0.82) 100%)',
+          }}
         />
 
-        {/* Uploaded Green (#80B8B4) Multi-Stop Atmospheric Gradient Vignette */}
+        {/* Uploaded Green (#80B8B4) Vignette with Clear Center Window */}
         <div
           aria-hidden="true"
           className="absolute inset-0"
           style={{
             background:
-              'radial-gradient(circle at 34% 48%, rgba(128, 184, 180, 0.24) 0%, rgba(56, 94, 90, 0.46) 52%, rgba(26, 44, 42, 0.88) 100%)',
+              'radial-gradient(circle at 45% 50%, rgba(29, 47, 45, 0.02) 0%, rgba(42, 72, 69, 0.18) 44%, rgba(25, 42, 40, 0.84) 100%)',
           }}
         />
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-b from-[#1D2F2D]/78 via-[#80B8B4]/12 to-[#192927]/88"
+          className="absolute inset-0 bg-gradient-to-b from-[#1D2F2D]/72 via-transparent to-[#192927]/82"
         />
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-r from-[#1D2F2D]/50 via-transparent to-[#233B39]/82"
+          className="absolute inset-0 bg-gradient-to-r from-[#1D2F2D]/55 via-transparent to-[#233B39]/78"
         />
       </div>
 
@@ -326,17 +330,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
           </div>
 
-          {/* Lower-Right Floating Price Callout in ₹ INR + Uploaded Green 'i' Hotspot Pin + Secondary Glass Dot */}
+          {/* Lower-Right Floating Price Callout in ₹ INR + Yellow-Orange 'i' Hotspot Pin + Secondary Glass Dot */}
           <div className="mt-6 sm:mt-8 lg:mt-1 flex items-center justify-start lg:justify-end lg:pr-48 relative z-30">
             <div className="relative inline-flex flex-col items-start">
-              {/* Uploaded Green (#80B8B4) 'i' Hotspot Pin Positioned Above Right Edge of Price */}
+              {/* Yellow-Orange (#F59E0B / #F5931E) 'i' Hotspot Pin Positioned Above Right Edge of Price */}
               <div className="self-end -mb-1 -mr-5 relative">
                 <button
                   type="button"
                   onClick={() => setShowInfoTooltip((prev) => !prev)}
                   onDoubleClick={handleInfoAction}
                   aria-label="Toggle sanctuary tariff details"
-                  className="w-8 h-8 rounded-full bg-gradient-to-br from-[#9AD0CC] to-[#80B8B4] text-[#252B2D] ring-8 ring-[#80B8B4]/30 hover:scale-105 transition-transform flex items-center justify-center shadow-xl cursor-pointer font-serif-editorial italic font-bold text-sm"
+                  className="w-8 h-8 rounded-full bg-gradient-to-br from-[#FBBF24] to-[#F5931E] text-white ring-8 ring-[#F5931E]/25 hover:scale-105 transition-transform flex items-center justify-center shadow-xl cursor-pointer font-serif-editorial italic font-bold text-sm"
                 >
                   i
                 </button>
@@ -352,7 +356,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                     <button
                       type="button"
                       onClick={handleInfoAction}
-                      className="mt-2 text-[10px] font-proxima-wide uppercase tracking-[0.18em] text-[#80B8B4] hover:text-white font-semibold cursor-pointer"
+                      className="mt-2 text-[10px] font-proxima-wide uppercase tracking-[0.18em] text-[#FBBF24] hover:text-white font-semibold cursor-pointer"
                     >
                       Inspect details ↗
                     </button>
@@ -387,7 +391,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               type="button"
               onClick={handleInfoAction}
               aria-label="Inspect coastal deck sanctuary"
-              className="hidden lg:flex ml-24 -mt-14 w-4 h-4 rounded-full bg-[#D7E4E1]/60 hover:bg-[#80B8B4] ring-4 ring-[#80B8B4]/20 backdrop-blur-sm transition-all cursor-pointer"
+              className="hidden lg:flex ml-24 -mt-14 w-4 h-4 rounded-full bg-white/55 hover:bg-[#FBBF24] ring-4 ring-white/15 backdrop-blur-sm transition-all cursor-pointer"
             />
           </div>
         </div>
@@ -408,7 +412,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <span>{arriveFormatted}</span>
                 <ChevronRight className="w-3.5 h-3.5 text-white/50" />
                 <span>{departFormatted}</span>
-                <Calendar className="w-4 h-4 text-[#80B8B4] ml-1.5" />
+                <Calendar className="w-4 h-4 text-[#F5931E] ml-1.5" />
               </span>
             </button>
 
